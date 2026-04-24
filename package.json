@@ -1,0 +1,14 @@
+{
+  "name": "lolo-blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && echo 'Open build/index.html in browser'"
+  },
+  "dependencies": {
+    "highlight.js": "^11.11.0",
+    "marked": "^15.0.0"
+  }
+}

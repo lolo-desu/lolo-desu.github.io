@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{SITE_DESC}}">
+<title>{{TITLE}} — {{SITE_TITLE}}</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">{{SITE_TITLE}}</a>
+    <p class="tagline">{{SITE_DESC}}</p>
+  </div>
+</header>
+<main class="container">
+  <article class="post">
+    <header class="post-header">
+      <h1>{{TITLE}}</h1>
+      <div class="post-meta">
+        <time datetime="{{DATE}}">{{DATE}}</time>
+        <div class="tags">{{TAGS}}</div>
+      </div>
+    </header>
+    <div class="post-content">
+      {{CONTENT}}
+    </div>
+    <footer class="post-footer">
+      <a href="/" class="back-link">← Back to home</a>
+    </footer>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 lolo-desu · Built with ❤️</p>
+  </div>
+</footer>
+</body>
+</html>
