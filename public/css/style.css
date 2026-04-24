@@ -1,28 +1,28 @@
 :root {
-  --bg: #fff;
-  --text: #1a1a1a;
-  --text-secondary: #666;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --border: #e5e5e5;
-  --code-bg: #f5f5f5;
-  --card-bg: #fafafa;
-  --tag-bg: #eff6ff;
-  --tag-text: #1d4ed8;
+  --bg: #1f1f1f;
+  --text: #b8b1a7;
+  --text-secondary: #8c867d;
+  --accent: #7f9fb8;
+  --accent-hover: #708ba1;
+  --border: #3a3d40;
+  --code-bg: #272727;
+  --card-bg: #272727;
+  --tag-bg: #4a4d50;
+  --tag-text: #d8d4cc;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --bg: #0d1117;
-    --text: #e6edf3;
-    --text-secondary: #8b949e;
-    --accent: #58a6ff;
-    --accent-hover: #79c0ff;
-    --border: #30363d;
-    --code-bg: #161b22;
-    --card-bg: #161b22;
-    --tag-bg: #1a2332;
-    --tag-text: #58a6ff;
+    --bg: #f1ede4;
+    --text: #272727;
+    --text-secondary: #4a4d50;
+    --accent: #708ba1;
+    --accent-hover: #7f9fb8;
+    --border: #d8d4cc;
+    --code-bg: #d8d4cc;
+    --card-bg: #d8d4cc;
+    --tag-bg: #b8b1a7;
+    --tag-text: #272727;
   }
 }
 
@@ -251,13 +251,11 @@ main { flex: 1; }
   .site-header { padding: 2rem 0 1.5rem; }
 }
 
-/* highlight.js theme overrides for dark mode */
-@media (prefers-color-scheme: dark) {
-  .hljs { color: #e6edf3; background: transparent; }
-  .hljs-keyword, .hljs-selector-tag { color: #ff7b72; }
-  .hljs-string, .hljs-addition { color: #a5d6ff; }
-  .hljs-comment { color: #8b949e; }
-  .hljs-number, .hljs-literal { color: #79c0ff; }
-  .hljs-function .hljs-title, .hljs-title.function_ { color: #d2a8ff; }
-  .hljs-built_in { color: #ffa657; }
-}
+/* highlight.js theme overrides for terminal colors */
+.hljs { color: var(--text); background: transparent; }
+.hljs-keyword, .hljs-selector-tag { color: #c77972; } /* Red from bell style */
+.hljs-string, .hljs-addition { color: #8f9d7a; } /* Green from status right */
+.hljs-comment { color: var(--text-secondary); font-style: italic; }
+.hljs-number, .hljs-literal { color: #de8b83; } /* Pink/red from activity */
+.hljs-function .hljs-title, .hljs-title.function_ { color: #86a2b8; } /* Blue/cyan from clock */
+.hljs-built_in { color: var(--accent); }
